@@ -19,6 +19,8 @@ fun main() {
         email == correctEmail) {
         val randomNumber = Random.nextInt(100)
         println("Login successful! Your session ID: $randomNumber")
+        val profile = UserProfile(username, email)
+        showUserProfile(profile)
     } else {
         println("Invalid credentials.")
     }
