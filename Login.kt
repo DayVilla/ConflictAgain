@@ -4,7 +4,6 @@ import kotlin.random.Random
 fun main() {
     val scanner = Scanner(System.`in`)
 
-    val correctUsername = "admin"
     val correctPassword = "password123"
     val correctEmail = "admin@example.com"
 
@@ -12,15 +11,12 @@ fun main() {
 
     var attempts = 0
     while (attempts < 3) {
-        print("Enter username: ")
-        val username = scanner.nextLine()
         print("Enter password: ")
         val password = scanner.nextLine()
         print("Enter email: ")
         val email = scanner.nextLine()
 
-        if (username == correctUsername &&
-            password == correctPassword &&
+        if (password == correctPassword &&
             email == correctEmail) {
             val randomNumber = Random.nextInt(100)
             val randomChar = ('A'..'Z').random()

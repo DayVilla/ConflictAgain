@@ -1,5 +1,5 @@
 fun printNumbers() {
-    for (i in 1..5) {
+    for (i in 1..100) {
         println("Number: $i")
     }
 }
