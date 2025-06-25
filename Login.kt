@@ -14,6 +14,8 @@ fun main() {
     val correctPassword = "password123"
     val correctEmail = "admin@example.com"
 
+    val megaBranch = "megaBranch"
+
     if (username == correctUsername &&
         password == correctPassword &&
         email == correctEmail) {
