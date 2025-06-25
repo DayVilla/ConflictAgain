@@ -1,4 +1,5 @@
 import java.util.Scanner
+import kotlin.random.Random
 
 fun main() {
     val scanner = Scanner(System.`in`)
@@ -16,7 +17,8 @@ fun main() {
     if (username == correctUsername &&
         password == correctPassword &&
         email == correctEmail) {
-        println("Login successful!")
+        val randomNumber = Random.nextInt(100)
+        println("Login successful! Your session ID: $randomNumber")
     } else {
         println("Invalid credentials.")
     }
