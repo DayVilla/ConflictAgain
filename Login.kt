@@ -18,7 +18,8 @@ fun main() {
         password == correctPassword &&
         email == correctEmail) {
         val randomNumber = Random.nextInt(100)
-        println("Login successful! Your session ID: $randomNumber")
+        val randomChar = ('A'..'Z').random()
+        println("Login successful! Your session ID: $randomChar$randomNumber")
     } else {
         println("Invalid credentials.")
     }
